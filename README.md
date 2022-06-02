@@ -1,5 +1,5 @@
 #installOracleJava
-Bash shell script to download and install Oracle JDK and configure java and javac alternatives.
+Bash shell script to download and install Oracle JDK on 64bit x86 platforms only, and configure java and javac alternatives.
 #
 Installer script for Oracle Java written by Biju C.
 Date written: 01/06/2022
