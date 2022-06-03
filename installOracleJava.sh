@@ -78,7 +78,8 @@ then
    else
       echo "Inf[I0004]:JDK $JAVA_VER installation completed successfully."
       echo "Inf[I0004]:Cleaning up installation file..."
-      rm -v $DOWNLOAD_FILE
+      RM_OUT=$(rm -v $DOWNLOAD_FILE)
+      echo "Inf[I0004]:"$RM_OUT", done."
       echo  "Inf[I0005]:Setting java alternatives."
       sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk-$JAVA_VER/bin/java 1
       if [ $? = 0 ];
